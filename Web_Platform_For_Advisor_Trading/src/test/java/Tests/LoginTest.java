@@ -10,7 +10,7 @@ import Base.BaseTest;
 import Utils.ReadXLdata;
 
 public class LoginTest extends BaseTest{
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void Login() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.findElement(By.xpath("//li[@class='nav-item']/a[text()= 'Sign In']")).click();
