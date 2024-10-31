@@ -13,16 +13,16 @@ public class LoginTest extends BaseTest{
 	@Test(enabled = false)
 	public void Login() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.findElement(By.xpath("//li[@class='nav-item']/a[text()= 'Sign In']")).click();
-
-		WebElement mobileTextBox = driver.findElement(By.id("txt_mobilenumber"));
-		mobileTextBox.sendKeys(properties.getProperty("LoginId"));
-		mobileTextBox.submit();
-
-
-		WebElement pinTextBox = driver.findElement(By.id("accessPinModel_accsspin"));
-		pinTextBox.sendKeys(properties.getProperty("Password"));
-		pinTextBox.submit();
+//		driver.findElement(By.xpath("//li[@class='nav-item']/a[text()= 'Sign In']")).click();
+//
+//		WebElement mobileTextBox = driver.findElement(By.id("txt_mobilenumber"));
+//		mobileTextBox.sendKeys(properties.getProperty("LoginId"));
+//		mobileTextBox.submit();
+//
+//
+//		WebElement pinTextBox = driver.findElement(By.id("accessPinModel_accsspin"));
+//		pinTextBox.sendKeys(properties.getProperty("Password"));
+//		pinTextBox.submit();
 
 		try {
 			Thread.sleep(5000);
