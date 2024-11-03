@@ -1,14 +1,18 @@
 package Base;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
+import Utils.TestUtil;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
@@ -17,12 +21,23 @@ public class BaseTest {
 	public static Properties properties = new Properties();
 	public static FileReader fr;
 	
-	@BeforeTest
-	public void setup() throws IOException {
-		if (driver == null) {
-			FileReader fr = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configFile\\Config.properties");
-			properties.load(fr);
-		}
+	
+	public BaseTest() {
+			FileReader fr;
+			try {
+				fr = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configFile\\Config.properties");
+				properties.load(fr);
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}	
+	}
+	
+	public void initialization() {
+
 		
 		if (properties.getProperty("browser").equalsIgnoreCase("chrome")) {
 			WebDriverManager .chromedriver().setup();
@@ -41,12 +56,14 @@ public class BaseTest {
 			driver=new ChromeDriver();
 			driver.get(properties.getProperty("URL"));
 		}
+
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TestUtil.implicitly_Wait));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(TestUtil.pageLoadTimeOut));
+
 	}
 	
-	@AfterTest
-	public void teardown() {
-		driver.quit();
-	}
+
 }
 
 
