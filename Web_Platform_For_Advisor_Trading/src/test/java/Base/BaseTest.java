@@ -8,19 +8,16 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 
 import Utils.TestUtil;
 import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class BaseTest {
 
 	public static WebDriver driver;
 	public static Properties properties = new Properties();
 	public static FileReader fr;
-	
 	
 	public BaseTest() {
 			FileReader fr;
@@ -33,12 +30,11 @@ public class BaseTest {
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}	
+			}
 	}
 	
 	public void initialization() {
 
-		
 		if (properties.getProperty("browser").equalsIgnoreCase("chrome")) {
 			WebDriverManager .chromedriver().setup();
 			driver=new ChromeDriver();
@@ -60,7 +56,6 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TestUtil.implicitly_Wait));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(TestUtil.pageLoadTimeOut));
-
 	}
 	
 

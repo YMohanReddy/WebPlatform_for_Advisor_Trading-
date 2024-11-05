@@ -1,6 +1,5 @@
 package Pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -19,6 +18,9 @@ public class LoginPage extends BaseTest {
 	@FindBy(className ="navbar-brand")
 	WebElement img_NeoStock_loginPage;
 	
+	@FindBy(xpath = "//a[text()= 'Sign In']")
+	WebElement btn_signIn_loginPage;
+	
 	
 //	Page Factory for initializing page objects:
 	public LoginPage() {
@@ -33,12 +35,11 @@ public class LoginPage extends BaseTest {
 	}
 	
 	public Boolean validateNeoStockImg() {
-		System.out.println("printing img locator: "+img_NeoStock_loginPage);
 		return img_NeoStock_loginPage.isDisplayed();
 	}
 	
 	public HomePage loin() {
-		driver.findElement(By.xpath("//li[@class='nav-item']/a[text()= 'Sign In']")).click();
+		btn_signIn_loginPage.click();
 
 		text_userID_loginPage.sendKeys(properties.getProperty("LoginId"));
 		text_userID_loginPage.submit();

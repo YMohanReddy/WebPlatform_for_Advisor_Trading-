@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ybhas\AppData\Local\Temp\testng-eclipse--1677258924\testng-customsuite.xml</span>
+                    <span>C:\Users\ybhas\AppData\Local\Temp\testng-eclipse-606489263\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,10 +103,39 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.HomePageTest" class="method navigator-link" hash-for-method="validateHomepageTitle">validateHomepageTitle</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.HomePageTest" class="method navigator-link" hash-for-method="placeEquityOrderTest(irfc, Equity, 7.0, Buy)">placeEquityOrderTest(irfc, Equity, 7.0, Buy)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.HomePageTest" class="method navigator-link" hash-for-method="placeEquityOrderTest(hathway cable, Equity, 45.0, Buy)">placeEquityOrderTest(hathway cable, Equity, 45.0, Buy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.HomePageTest" class="method navigator-link" hash-for-method="placeEquityOrderTest(idfc first bank, Equity, 4.0, Buy)">placeEquityOrderTest(idfc first bank, Equity, 4.0, Buy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.HomePageTest" class="method navigator-link" hash-for-method="placeEquityOrderTest(suzlon energy, Equity, 5.0, Buy)">placeEquityOrderTest(suzlon energy, Equity, 5.0, Buy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.HomePageTest" class="method navigator-link" hash-for-method="placeEquityOrderTest(rail vikas nigam, Equity, 9.0, Buy)">placeEquityOrderTest(rail vikas nigam, Equity, 9.0, Buy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -126,16 +155,37 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateHomepageTitle">
-                  </a> <!-- validateHomepageTitle -->
-                  <span class="method-name">validateHomepageTitle</span>
-                  <div class="stack-trace">java.lang.AssertionError: Title is mismatching expected [Trade Panel :: Neostox1] but found [Trade Panel :: Neostox]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at Tests.HomePageTest.validateHomepageTitle(HomePageTest.java:23)
+                  <a name="placeEquityOrderTest(irfc, Equity, 7.0, Buy)">
+                  </a> <!-- placeEquityOrderTest(irfc, Equity, 7.0, Buy) -->
+                  <span class="method-name">placeEquityOrderTest</span>
+                  <span class="parameters">(irfc,Equity,7.0,Buy)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=130.0.6723.92)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7634664a4cc21ba90d7a91f38dabfa74, findElement {value=txt_instruments1, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\ybhas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56466}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56466/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7634664a4cc21ba90d7a91f38dabfa74
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy38.sendKeys(Unknown Source)
+	at Pages.HomePage.placeEquityOrder(HomePage.java:60)
+	at Tests.HomePageTest.placeEquityOrderTest(HomePageTest.java:54)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -168,10 +218,50 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeEquityOrderTest(hathway cable, Equity, 45.0, Buy)">
+                  </a> <!-- placeEquityOrderTest(hathway cable, Equity, 45.0, Buy) -->
+                  <span class="method-name">placeEquityOrderTest</span>
+                  <span class="parameters">(hathway cable,Equity,45.0,Buy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeEquityOrderTest(idfc first bank, Equity, 4.0, Buy)">
+                  </a> <!-- placeEquityOrderTest(idfc first bank, Equity, 4.0, Buy) -->
+                  <span class="method-name">placeEquityOrderTest</span>
+                  <span class="parameters">(idfc first bank,Equity,4.0,Buy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeEquityOrderTest(suzlon energy, Equity, 5.0, Buy)">
+                  </a> <!-- placeEquityOrderTest(suzlon energy, Equity, 5.0, Buy) -->
+                  <span class="method-name">placeEquityOrderTest</span>
+                  <span class="parameters">(suzlon energy,Equity,5.0,Buy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeEquityOrderTest(rail vikas nigam, Equity, 9.0, Buy)">
+                  </a> <!-- placeEquityOrderTest(rail vikas nigam, Equity, 9.0, Buy) -->
+                  <span class="method-name">placeEquityOrderTest</span>
+                  <span class="parameters">(rail vikas nigam,Equity,9.0,Buy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ybhas\AppData\Local\Temp\testng-eclipse--1677258924\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ybhas\AppData\Local\Temp\testng-eclipse-606489263\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -182,7 +272,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;Tests.HomePageTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;validateHomepageTitle&quot;/&gt;
+          &lt;include name=&quot;placeEquityOrderTest&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- Tests.HomePageTest --&gt;
     &lt;/classes&gt;
@@ -224,16 +314,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateHomepageTitle')
+data.setCell(0, 1, 'placeEquityOrderTest')
 data.setCell(0, 2, 'Tests.HomePageTest')
-data.setCell(0, 3, 10652);
+data.setCell(0, 3, 28474);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'placeEquityOrderTest')
+data.setCell(1, 2, 'Tests.HomePageTest')
+data.setCell(1, 3, 13775);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'placeEquityOrderTest')
+data.setCell(2, 2, 'Tests.HomePageTest')
+data.setCell(2, 3, 6075);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'placeEquityOrderTest')
+data.setCell(3, 2, 'Tests.HomePageTest')
+data.setCell(3, 3, 5624);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'placeEquityOrderTest')
+data.setCell(4, 2, 'Tests.HomePageTest')
+data.setCell(4, 3, 4818);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 58 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -248,9 +354,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Tests.HomePageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateHomepageTitle</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -267,12 +380,60 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">validateHomepageTitle</span>
-                <span class="method-start">31419 ms</span>
+                <span class="method-name">placeEquityOrderTest(irfc, Equity, 7.0, Buy)</span>
+                <span class="method-start">21817 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">42081 ms</span>
+                <span class="method-start">50321 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUP</span>
+                <span class="method-start">50632 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">placeEquityOrderTest(suzlon energy, Equity, 5.0, Buy)</span>
+                <span class="method-start">82523 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">88148 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUP</span>
+                <span class="method-start">88416 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">placeEquityOrderTest(idfc first bank, Equity, 4.0, Buy)</span>
+                <span class="method-start">96364 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">101184 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUP</span>
+                <span class="method-start">101504 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">placeEquityOrderTest(rail vikas nigam, Equity, 9.0, Buy)</span>
+                <span class="method-start">108671 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">114750 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUP</span>
+                <span class="method-start">115029 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">placeEquityOrderTest(hathway cable, Equity, 45.0, Buy)</span>
+                <span class="method-start">125057 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">138841 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
