@@ -26,8 +26,8 @@ public class ExtentReportManager implements ITestListener {
 
 		extent.setSystemInfo("Computer Name", "localhost");
 		extent.setSystemInfo("Environment", "QA");
-		extent.setSystemInfo("Tester Name", "Pavan");
-		extent.setSystemInfo("os", "Windows10");
+		extent.setSystemInfo("Tester Name", "Mohan");
+		extent.setSystemInfo("os", "Windows11");
 		extent.setSystemInfo("Browser name", "Chrome");
 
 	}
@@ -51,12 +51,13 @@ public class ExtentReportManager implements ITestListener {
 	public void onFinish(ITestContext context) {
 		extent.flush();
 	}
-	//Method for adding logs passed from test cases
+	
+	//Method for adding logs as info from test cases
 	 public static void reportLogInfo(String message) {    
 	    test.log(Status.INFO, message);
 	}
 
-	//Method for adding logs passed from test cases
+	//Method for adding logs as passed from test cases
 	 public static void reportLogPass(String message) {    
 		 test.log(Status.PASS, message);
 	}

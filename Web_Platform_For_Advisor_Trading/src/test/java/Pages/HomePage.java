@@ -53,9 +53,6 @@ public class HomePage extends BaseTest {
 	}
 	
 	public void placeEquityOrder(String securityName, String securityType, String quantity, String purchaseType) {
-//		System.out.println(securityName);
-//		System.out.println(securityType);
-//		System.out.println(quantity);
 		//Enter security name in search box
 		text_searchBox_homePage.sendKeys(securityName);
 		ExtentReportManager.reportLogPass("Entered text in the search box: " +securityName);
