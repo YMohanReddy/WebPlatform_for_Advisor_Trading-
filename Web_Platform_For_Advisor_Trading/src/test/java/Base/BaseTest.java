@@ -57,8 +57,6 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TestUtil.implicitly_Wait));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(TestUtil.pageLoadTimeOut));
 	}
-	
-
 }
 
 
