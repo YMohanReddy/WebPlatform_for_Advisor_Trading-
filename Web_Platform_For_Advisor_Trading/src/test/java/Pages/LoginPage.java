@@ -39,12 +39,18 @@ public class LoginPage extends BaseTest {
 	}
 	
 	public HomePage loin() {
+		enterUserName();
+		return enterPassword();
+	}
+	
+	public void enterUserName() {
 		btn_signIn_loginPage.click();
 
 		text_userID_loginPage.sendKeys(properties.getProperty("LoginId"));
 		text_userID_loginPage.submit();
-
-
+	}
+	
+	public HomePage enterPassword() {
 		text_password_loginPage.sendKeys(properties.getProperty("Password"));
 		text_password_loginPage.submit();
 

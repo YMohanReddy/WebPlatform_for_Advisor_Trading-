@@ -55,11 +55,7 @@ public class WebEventListners extends BaseTest implements WebDriverListener {
 
 	public void onException(Throwable error, WebDriver driver) {
 		System.out.println("Exception occured: " + error);
-		try {
-			CapturingScreenshot.getScreenshot();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		CapturingScreenshot.getScreenshot();
 	}
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
