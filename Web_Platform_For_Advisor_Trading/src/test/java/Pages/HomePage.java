@@ -1,19 +1,15 @@
 package Pages;
 
-import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Base.BaseTest;
 import Utils.ExtentReportManager;
-import Utils.ReadPropertiesFile;
-import Utils.ReadXLdata;
 
 public class HomePage extends BaseTest {
 
