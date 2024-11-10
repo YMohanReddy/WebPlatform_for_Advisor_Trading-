@@ -1,13 +1,8 @@
 package Hooks;
 
 import org.testng.annotations.Test;
-
-import Utils.ReadPropertiesFile;
-import Utils.ReadXLdata;
-
-import java.io.IOException;
-
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 public class DataProvide {
 
@@ -51,18 +46,6 @@ public class DataProvide {
 	dataset[3][0]="user4";
 	dataset[3][1]="pass4";
 	return dataset;
-	}
-	
-	
-	@DataProvider()
-	public Object[][] tradeData() throws IOException {
-		String excelName = ReadPropertiesFile.readDataFromPropertiesFile("testDataExcelName");
-		String sheetName = ReadPropertiesFile.readDataFromPropertiesFile("testDataExcelSheetName");
-		
-//		System.out.println(excelName);
-//		System.out.println(sheetName);
-
-		return ReadXLdata.getData(excelName, sheetName);
 	}
 
 }

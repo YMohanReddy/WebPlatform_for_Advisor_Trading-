@@ -1,7 +1,5 @@
 package Utils;
 
-import java.io.IOException;
-
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -9,7 +7,6 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
@@ -42,12 +39,8 @@ public class ExtentReportManager implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 		test = extent.createTest(result.getName());
-		test.log(Status.FAIL, "Test case FAILED is:" + result.getName());//to add name in extent report
-		test.log(Status.FAIL, "Test Case FAILED cause is: " + result.getThrowable());//to add error/exception in extent report
-		
-		String pathOfSS = CapturingScreenshot.getScreenshot();
-		test.addScreenCaptureFromPath(pathOfSS); //to add screenshot in extent report
-
+		test.log(Status.FAIL, "Test case FAILED is:" + result.getName());
+		test.log(Status.FAIL, "Test Case FAILED cause is: " + result.getThrowable());
 	}
 
 	public void onTestSkipped(ITestResult result) {

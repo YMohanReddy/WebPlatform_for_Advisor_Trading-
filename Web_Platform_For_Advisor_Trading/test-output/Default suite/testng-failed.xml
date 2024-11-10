@@ -7,7 +7,7 @@
         <methods>
           <include name="setUP"/>
           <include name="tearDown"/>
-          <include name="validateHomepageTitleTest"/>
+          <include name="placeEquityOrderTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- Tests.HomePageTest -->
     </classes>

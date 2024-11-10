@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Nov 09 21:22:44 IST 2024</td>
+<td>Started on:</td><td>Tue Nov 05 16:57:08 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>182 seconds (182072 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16554 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,64 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Tests.HomePageTest.closeInfoModelPopupTest()'><b>closeInfoModelPopupTest</b><br>Test class: Tests.HomePageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (3dae0024903409973b02a46e74fab407)] -&gt; xpath: //div[@id=&quot;modal_neostoxinfo&quot;]//a] (tried for 25 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\ybhas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53966}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53966/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3dae0024903409973b02a46e74fab407
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Hooks.Hooks.explicitlyWaitFor(Hooks.java:22)
-	at Pages.HomePage.handelModelPopup(HomePage.java:153)
-	at Tests.HomePageTest.closeInfoModelPopupTest(HomePageTest.java:66)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace489750974", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace489750974'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (3dae0024903409973b02a46e74fab407)] -&gt; xpath: //div[@id=&quot;modal_neostoxinfo&quot;]//a] (tried for 25 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\ybhas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53966}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53966/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3dae0024903409973b02a46e74fab407
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Hooks.Hooks.explicitlyWaitFor(Hooks.java:22)
-	at Pages.HomePage.handelModelPopup(HomePage.java:153)
-	at Tests.HomePageTest.closeInfoModelPopupTest(HomePageTest.java:66)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-</pre></div></td>
-<td>25</td>
-<td>Tests.HomePageTest@533bda92</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -134,45 +76,20 @@ Session ID: 3dae0024903409973b02a46e74fab407
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.HomePageTest.placeEquityOrderTest()'><b>placeEquityOrderTest</b><br>Test class: Tests.HomePageTest<br>Parameters: suzlon energy, Equity, 5.0, Buy</td>
+<td title='Tests.LoginPageTest.neoStockImgTest()'><b>neoStockImgTest</b><br>Test class: Tests.LoginPageTest</td>
 <td></td>
-<td>5</td>
-<td>Tests.HomePageTest@533bda92</td></tr>
+<td>0</td>
+<td>Tests.LoginPageTest@6f10d5b6</td></tr>
 <tr>
-<td title='Tests.HomePageTest.validateHomepageTitleTest()'><b>validateHomepageTitleTest</b><br>Test class: Tests.HomePageTest</td>
+<td title='Tests.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: Tests.LoginPageTest</td>
 <td></td>
-<td>3</td>
-<td>Tests.HomePageTest@533bda92</td></tr>
+<td>1</td>
+<td>Tests.LoginPageTest@6f10d5b6</td></tr>
 <tr>
-<td title='Tests.HomePageTest.placeEquityOrderTest()'><b>placeEquityOrderTest</b><br>Test class: Tests.HomePageTest<br>Parameters: irfc, Equity, 7.0, Buy</td>
+<td title='Tests.LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: Tests.LoginPageTest</td>
 <td></td>
-<td>8</td>
-<td>Tests.HomePageTest@533bda92</td></tr>
-<tr>
-<td title='Tests.HomePageTest.placeEquityOrderTest()'><b>placeEquityOrderTest</b><br>Test class: Tests.HomePageTest<br>Parameters: idfc first bank, Equity, 4.0, Buy</td>
-<td></td>
-<td>4</td>
-<td>Tests.HomePageTest@533bda92</td></tr>
-<tr>
-<td title='Tests.HomePageTest.placeEquityOrderTest()'><b>placeEquityOrderTest</b><br>Test class: Tests.HomePageTest<br>Parameters: hathway cable, Equity, 45.0, Buy</td>
-<td></td>
-<td>4</td>
-<td>Tests.HomePageTest@533bda92</td></tr>
-<tr>
-<td title='Tests.HomePageTest.validateNavigationMenuTest()'><b>validateNavigationMenuTest</b><br>Test class: Tests.HomePageTest</td>
-<td></td>
-<td>31</td>
-<td>Tests.HomePageTest@533bda92</td></tr>
-<tr>
-<td title='Tests.HomePageTest.placeEquityOrderTest()'><b>placeEquityOrderTest</b><br>Test class: Tests.HomePageTest<br>Parameters: rail vikas nigam, Equity, 9.0, Buy</td>
-<td></td>
-<td>4</td>
-<td>Tests.HomePageTest@533bda92</td></tr>
-<tr>
-<td title='Tests.HomePageTest.validateHomePageHeaderTest()'><b>validateHomePageHeaderTest</b><br>Test class: Tests.HomePageTest</td>
-<td></td>
-<td>11</td>
-<td>Tests.HomePageTest@533bda92</td></tr>
+<td>0</td>
+<td>Tests.LoginPageTest@6f10d5b6</td></tr>
 </table><p>
 </body>
 </html>
