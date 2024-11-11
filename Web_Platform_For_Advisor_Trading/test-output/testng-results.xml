@@ -1,17 +1,381 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="18" passed="17" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-10T10:32:05 IST" name="Default suite" finished-at="2024-11-10T10:32:18 IST" duration-ms="13285">
+  <suite started-at="2024-11-11T09:40:20 IST" name="Web Plarform For Advisor Trading automation test suite" finished-at="2024-11-11T09:50:14 IST" duration-ms="594626">
     <groups>
     </groups>
-    <test started-at="2024-11-10T10:32:05 IST" name="Default test" finished-at="2024-11-10T10:32:18 IST" duration-ms="13285">
+    <test started-at="2024-11-11T09:40:20 IST" name="Test" finished-at="2024-11-11T09:50:14 IST" duration-ms="594626">
       <class name="Tests.HomePageTest">
-        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@45d84a20]" started-at="2024-11-10T10:32:05 IST" name="setUP" finished-at="2024-11-10T10:32:14 IST" duration-ms="8388" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:40:21 IST" name="setUP" finished-at="2024-11-11T09:40:31 IST" duration-ms="9870" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="validateHomepageTitleTest()[pri:0, instance:Tests.HomePageTest@45d84a20]" started-at="2024-11-10T10:32:14 IST" name="validateHomepageTitleTest" finished-at="2024-11-10T10:32:17 IST" duration-ms="3756" status="FAIL">
+        <test-method signature="addOrdersToQuickViewTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:40:31 IST" name="addOrdersToQuickViewTest" data-provider="tradeData" finished-at="2024-11-11T09:40:37 IST" duration-ms="5647" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[irfc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Equity]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[7.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Buy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOrdersToQuickViewTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:40:37 IST" name="tearDown" finished-at="2024-11-11T09:40:37 IST" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:40:37 IST" name="setUP" finished-at="2024-11-11T09:40:48 IST" duration-ms="10621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="addOrdersToQuickViewTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:40:48 IST" name="addOrdersToQuickViewTest" data-provider="tradeData" finished-at="2024-11-11T09:41:04 IST" duration-ms="16181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suzlon energy]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Equity]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Buy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOrdersToQuickViewTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:41:04 IST" name="tearDown" finished-at="2024-11-11T09:41:04 IST" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:41:04 IST" name="setUP" finished-at="2024-11-11T09:41:13 IST" duration-ms="8925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="addOrdersToQuickViewTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:41:13 IST" name="addOrdersToQuickViewTest" data-provider="tradeData" finished-at="2024-11-11T09:41:18 IST" duration-ms="4567" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[idfc first bank]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Equity]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Buy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOrdersToQuickViewTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:41:18 IST" name="tearDown" finished-at="2024-11-11T09:41:18 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:41:18 IST" name="setUP" finished-at="2024-11-11T09:41:25 IST" duration-ms="6824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="addOrdersToQuickViewTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:41:25 IST" name="addOrdersToQuickViewTest" data-provider="tradeData" finished-at="2024-11-11T09:41:36 IST" duration-ms="10910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rail vikas nigam]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Equity]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Buy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOrdersToQuickViewTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:41:36 IST" name="tearDown" finished-at="2024-11-11T09:41:37 IST" duration-ms="1895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:41:37 IST" name="setUP" finished-at="2024-11-11T09:41:46 IST" duration-ms="8078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="addOrdersToQuickViewTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:41:46 IST" name="addOrdersToQuickViewTest" data-provider="tradeData" finished-at="2024-11-11T09:41:50 IST" duration-ms="4576" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hathway cable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Equity]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[45.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Buy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOrdersToQuickViewTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:41:50 IST" name="tearDown" finished-at="2024-11-11T09:41:50 IST" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:41:50 IST" name="setUP" finished-at="2024-11-11T09:41:57 IST" duration-ms="6242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="openChartsForWatchListItemsTest()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:41:57 IST" name="openChartsForWatchListItemsTest" finished-at="2024-11-11T09:43:04 IST" duration-ms="67526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openChartsForWatchListItemsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:43:04 IST" name="tearDown" finished-at="2024-11-11T09:43:05 IST" duration-ms="459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:43:05 IST" name="setUP" finished-at="2024-11-11T09:43:13 IST" duration-ms="8292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="placeEquityOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:43:13 IST" name="placeEquityOrderTest" data-provider="tradeData" finished-at="2024-11-11T09:44:00 IST" duration-ms="46586" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[irfc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Equity]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[7.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Buy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeEquityOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:44:00 IST" name="tearDown" finished-at="2024-11-11T09:44:00 IST" duration-ms="471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:44:00 IST" name="setUP" finished-at="2024-11-11T09:44:06 IST" duration-ms="6410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="placeEquityOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:44:06 IST" name="placeEquityOrderTest" data-provider="tradeData" finished-at="2024-11-11T09:44:51 IST" duration-ms="45064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suzlon energy]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Equity]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Buy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeEquityOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:44:51 IST" name="tearDown" finished-at="2024-11-11T09:44:52 IST" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:44:52 IST" name="setUP" finished-at="2024-11-11T09:44:58 IST" duration-ms="6319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="placeEquityOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:44:58 IST" name="placeEquityOrderTest" data-provider="tradeData" finished-at="2024-11-11T09:45:46 IST" duration-ms="47416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[idfc first bank]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Equity]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Buy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeEquityOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:45:46 IST" name="tearDown" finished-at="2024-11-11T09:45:46 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:45:46 IST" name="setUP" finished-at="2024-11-11T09:45:52 IST" duration-ms="6172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="placeEquityOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:45:52 IST" name="placeEquityOrderTest" data-provider="tradeData" finished-at="2024-11-11T09:46:37 IST" duration-ms="44850" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rail vikas nigam]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Equity]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Buy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeEquityOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:46:37 IST" name="tearDown" finished-at="2024-11-11T09:46:38 IST" duration-ms="507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:46:38 IST" name="setUP" finished-at="2024-11-11T09:46:44 IST" duration-ms="6621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="placeEquityOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:46:44 IST" name="placeEquityOrderTest" data-provider="tradeData" finished-at="2024-11-11T09:47:30 IST" duration-ms="45930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hathway cable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Equity]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[45.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Buy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeEquityOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:47:30 IST" name="tearDown" finished-at="2024-11-11T09:47:31 IST" duration-ms="471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:47:31 IST" name="setUP" finished-at="2024-11-11T09:47:38 IST" duration-ms="6980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="validateHomePageHeaderTest()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:47:38 IST" name="validateHomePageHeaderTest" finished-at="2024-11-11T09:48:13 IST" duration-ms="35051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHomePageHeaderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:48:13 IST" name="tearDown" finished-at="2024-11-11T09:48:13 IST" duration-ms="331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:48:13 IST" name="setUP" finished-at="2024-11-11T09:48:19 IST" duration-ms="5906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="validateHomepageTitleTest()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:48:19 IST" name="validateHomepageTitleTest" finished-at="2024-11-11T09:48:46 IST" duration-ms="27024" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Title is mismatching expected [Trade Panel :: Neostox1] but found [Trade Panel :: Neostox]]]>
@@ -23,7 +387,7 @@ at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
-at Tests.HomePageTest.validateHomepageTitleTest(HomePageTest.java:42)
+at Tests.HomePageTest.validateHomepageTitleTest(HomePageTest.java:44)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -34,33 +398,85 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateHomepageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@45d84a20]" started-at="2024-11-10T10:32:18 IST" name="tearDown" finished-at="2024-11-10T10:32:18 IST" duration-ms="501" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:48:46 IST" name="tearDown" finished-at="2024-11-11T09:48:47 IST" duration-ms="436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:48:47 IST" name="setUP" finished-at="2024-11-11T09:48:53 IST" duration-ms="6243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="validateNavigationMenuTest()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:48:53 IST" name="validateNavigationMenuTest" finished-at="2024-11-11T09:49:34 IST" duration-ms="41047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNavigationMenuTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:49:34 IST" name="tearDown" finished-at="2024-11-11T09:49:34 IST" duration-ms="428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:49:39 IST" name="setUP" finished-at="2024-11-11T09:49:46 IST" duration-ms="6285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="closeHelloPopupTest()[pri:2, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:49:46 IST" name="closeHelloPopupTest" finished-at="2024-11-11T09:49:56 IST" duration-ms="10271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeHelloPopupTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@4d0d9fe7]" started-at="2024-11-11T09:49:56 IST" name="tearDown" finished-at="2024-11-11T09:49:58 IST" duration-ms="1998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="Tests.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.LoginPageTest@7b4c50bc]" started-at="2024-11-11T09:49:34 IST" name="setup" finished-at="2024-11-11T09:49:39 IST" duration-ms="4662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginPageTitleTest()[pri:1, instance:Tests.LoginPageTest@7b4c50bc]" started-at="2024-11-11T09:49:39 IST" name="loginPageTitleTest" finished-at="2024-11-11T09:49:39 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.LoginPageTest@7b4c50bc]" started-at="2024-11-11T09:49:39 IST" name="teardown" finished-at="2024-11-11T09:49:39 IST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.LoginPageTest@7b4c50bc]" started-at="2024-11-11T09:49:58 IST" name="setup" finished-at="2024-11-11T09:50:03 IST" duration-ms="4963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:2, instance:Tests.LoginPageTest@7b4c50bc]" started-at="2024-11-11T09:50:03 IST" name="loginTest" finished-at="2024-11-11T09:50:06 IST" duration-ms="3610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.LoginPageTest@7b4c50bc]" started-at="2024-11-11T09:50:06 IST" name="teardown" finished-at="2024-11-11T09:50:07 IST" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.LoginPageTest@7b4c50bc]" started-at="2024-11-11T09:50:07 IST" name="setup" finished-at="2024-11-11T09:50:14 IST" duration-ms="7598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="neoStockImgTest()[pri:2, instance:Tests.LoginPageTest@7b4c50bc]" started-at="2024-11-11T09:50:14 IST" name="neoStockImgTest" finished-at="2024-11-11T09:50:14 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- neoStockImgTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.LoginPageTest@7b4c50bc]" started-at="2024-11-11T09:50:14 IST" name="teardown" finished-at="2024-11-11T09:50:14 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Tests.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Web Plarform For Advisor Trading automation test suite -->
 </testng-results>

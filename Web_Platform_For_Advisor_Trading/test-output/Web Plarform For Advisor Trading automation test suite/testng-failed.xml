@@ -9,8 +9,8 @@
       <class name="Tests.HomePageTest">
         <methods>
           <include name="setUP"/>
-          <include name="closeInfoModelPopupTest"/>
           <include name="tearDown"/>
+          <include name="validateHomepageTitleTest"/>
         </methods>
       </class> <!-- Tests.HomePageTest -->
     </classes>

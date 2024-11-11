@@ -21,12 +21,7 @@ public class testListeners extends CapturingScreenshot implements ITestListener{
 
 	public void onTestFailure (ITestResult result) {
 		System.out.println("Test failed - screenshot captured");
-		try {
-			getScreenshot();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		getScreenshot();
 	}
 
 

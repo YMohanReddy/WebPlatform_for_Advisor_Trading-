@@ -62,6 +62,38 @@ public class HomePage extends BaseTest {
 	
 	@FindBy(xpath = "//a[@id='lnk_userdashboard']")
 	WebElement dashboardLinkUnderReports_homepage;
+	
+	@FindBy(xpath = "//div[@class='button-label']/div[@title='Buy']/button")
+	WebElement btn_buyButtonInSearch_homepage;
+	
+	@FindBy(xpath = "//div[@id='div_autocalculate']/input[@id='rad_qty_auto']")
+	WebElement radioBtn_AutoCalBtn_homepage;
+	
+	@FindBy(id = "txt_investmentpercent")
+	WebElement textBox_investmentPercent_homepage;
+	
+	@FindBy(id = "lnk_placeorder")
+	WebElement btn_buyButton_homepage;
+	
+	@FindBy(xpath = "//div[@id='modal_shiftedtrialnew']//div[@class='modal-content modalshadow mobbuysellmain']/div/a[@class='crossbtnmodal']")
+	WebElement popUp_helloPopup_homepage;
+	
+	@FindBy(id = "rad_autolimit")
+	WebElement radioBtn_limitAuto_BuySellModel;
+	
+	@FindBy(id = "lnk_pendingorders")
+	WebElement link_pendingOrders_homepage;
+	
+	@FindBy(id = "lnk_completedorders")
+	WebElement link_daysHistory_homepage;
+	
+	@FindBy(id = "lbl_curbalancetop")
+	WebElement profileLink;
+	
+	@FindBy(id = "lnk_logout")
+	WebElement logoutLink;
+	
+	
 
 	public HomePage() {
 		PageFactory.initElements(driver, this);
@@ -104,8 +136,9 @@ public class HomePage extends BaseTest {
 	public Boolean validateHomePageLoading() {
 		return link_tradepanel_homePage.isDisplayed();
 	}
+
 	
-	public void placeEquityOrder(String securityName, String securityType, String quantity, String purchaseType) {
+	public void addOrdersToQuickView(String securityName, String securityType, String quantity, String purchaseType) {
 		//Enter security name in search box
 		text_searchBox_homePage.sendKeys(securityName);
 		// select the first option in the search suggestions
@@ -118,14 +151,14 @@ public class HomePage extends BaseTest {
 		lnk_tradepanel_homePage.click();
 		for(int i=1;i<=5;i++) {
 			WebElement ele = driver.findElement(By.xpath("//ul[@class='navbar-nav']/li["+i+"]"));
-			Hooks.mouseHoverOnElement(driver, ele);
+			hooks.mouseHoverOnElement(driver, ele);
 		}
 	}
 	public void validateStrategiesSubLinks() {
 		NavBarLink_strategiesNav_homepage.click();
 		for(int i=1; i<=2; i++) {
 			WebElement ele = driver.findElement(By.xpath("//li[@id='li_strategies']//li["+i+"]"));
-			Hooks.mouseHoverOnElement(driver, ele);
+			hooks.mouseHoverOnElement(driver, ele);
 			try {
 				Thread.sleep(2000);
 			} catch (InterruptedException e) {
@@ -136,12 +169,11 @@ public class HomePage extends BaseTest {
 		}
 	}
 	public void validateScreensSubLinks() throws IOException {
-		handelModelPopup();
-		popUp_modalDialogBox_HomePage.click();
+//		popUp_modalDialogBox_HomePage.click();
 		NavBarLink_screensNav_homepage.click();
 		for(int i=1; i<=8; i++) {
 			WebElement ele = driver.findElement(By.xpath("//li[@id='li_analyzers']//li["+i+"]"));
-			Hooks.mouseHoverOnElement(driver, ele);
+			hooks.mouseHoverOnElement(driver, ele);
 			ele.click();
 			try {
 				Thread.sleep(500);
@@ -153,8 +185,9 @@ public class HomePage extends BaseTest {
 	}
 	public void handelModelPopup() throws IOException {
 		CapturingScreenshot.getScreenshot();
-		hooks.explicitlyWaitFor(driver, popUp_modalDialogBox_HomePage, 25);
-		
+		hooks.explicitlyWaitFor(driver, popUp_modalDialogBox_HomePage, 35);
+		popUp_modalDialogBox_HomePage.click();
+		hooks.waitForSeconds(3000);
 	}
 	public void validateReportsSubLinks() {
 		NavBarLink_reportsNav_homepage.click();
@@ -168,5 +201,54 @@ public class HomePage extends BaseTest {
 		}
 
 		hooks.findElementById(driver, "lnk_tradehistory").click();
+	}
+
+	
+	public void placeEquityOrder(String securityName, String securityType, String quantity, String purchaseType) throws IOException {
+		//Enter security name in search box
+		text_searchBox_homePage.sendKeys(securityName);
+		// move to first option in the search suggestions
+		hooks.mouseHoverOnElement(driver, dropdown_searchSuggestions_homePage);
+		btn_buyButtonInSearch_homepage.click();
+		hooks.waitForSeconds(3000);
+//		handelModelPopup();
+		radioBtn_limitAuto_BuySellModel.click();
+		btn_buyButton_homepage.click();
+		hooks.waitForSeconds(4000);
+	}
+	
+	public void navigateToPendingOrders() {
+		link_pendingOrders_homepage.click();
+		hooks.waitForSeconds(2000);
+	}
+	
+	public void navigateToDaysHistory() {
+		link_daysHistory_homepage.click();
+		hooks.waitForSeconds(1000);
+	}
+
+	public void handelHelloPopup() {
+		hooks.waitForSeconds(10000);
+//		hooks.acceptPopup(driver);
+		popUp_helloPopup_homepage.click();
+	}
+	
+
+	public void logout() {
+		hooks.mouseHoverOnElement(driver, profileLink);
+		logoutLink.click();
+	}
+	
+	public void openChartsForWatchListItems() {
+		for(int i=1; i<10; i++) {
+			hooks.mouseHoverOnElement(driver, driver.findElement(By.xpath("//div[@id='sortable']//a["+i+"]")));
+			hooks.waitForSeconds(2000);
+			WebElement element = driver.findElement(By.xpath("//div[@id='sortable']//a["+i+"]//span[@title='Open Chart']"));
+			if(element.isDisplayed()) {
+			element.click();
+			hooks.waitForSeconds(2000);
+			}
+			else {break;}
+		}
 	}
 }
