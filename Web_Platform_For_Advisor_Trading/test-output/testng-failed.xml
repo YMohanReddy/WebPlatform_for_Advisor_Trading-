@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="1" parallel="methods" name="Failed suite [Web Plarform For Advisor Trading automation test suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Utils.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="1" parallel="methods" name="Test(failed)">
     <classes>
       <class name="Tests.HomePageTest">
         <methods>
@@ -11,5 +14,5 @@
         </methods>
       </class> <!-- Tests.HomePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Web Plarform For Advisor Trading automation test suite] -->

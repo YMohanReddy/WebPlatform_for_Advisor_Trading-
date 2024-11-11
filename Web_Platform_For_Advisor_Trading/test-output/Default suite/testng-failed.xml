@@ -6,8 +6,8 @@
       <class name="Tests.HomePageTest">
         <methods>
           <include name="setUP"/>
+          <include name="openChartsForWatchListItemsTest"/>
           <include name="tearDown"/>
-          <include name="validateHomepageTitleTest"/>
         </methods>
       </class> <!-- Tests.HomePageTest -->
     </classes>

@@ -22,6 +22,7 @@ public class LoginPage extends BaseTest {
 	WebElement btn_signIn_loginPage;
 	
 	
+	
 //	Page Factory for initializing page objects:
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
@@ -46,12 +47,12 @@ public class LoginPage extends BaseTest {
 	public void enterUserName() {
 		btn_signIn_loginPage.click();
 
-		text_userID_loginPage.sendKeys(properties.getProperty("LoginId"));
+		text_userID_loginPage.sendKeys(properties.getProperty("LoginId1"));
 		text_userID_loginPage.submit();
 	}
 	
 	public HomePage enterPassword() {
-		text_password_loginPage.sendKeys(properties.getProperty("Password"));
+		text_password_loginPage.sendKeys(properties.getProperty("Password1"));
 		text_password_loginPage.submit();
 
 		return new HomePage();

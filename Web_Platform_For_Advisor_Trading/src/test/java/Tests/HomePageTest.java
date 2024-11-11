@@ -38,12 +38,16 @@ public class HomePageTest extends BaseTest {
 
 
 	@Test
-	public void validateHomepageTitleTest() {
+	public void validateHomepageTitleTest() throws IOException {
+		homePage.handelHelloPopup();
+		homePage.handelModelPopup();
 		Assert.assertEquals(homePage.validateTitle(), "Trade Panel :: Neostox1", "Title is mismatching");
 	}
 	
 	@Test
-	public void validateHomePageHeaderTest() throws InterruptedException {
+	public void validateHomePageHeaderTest() throws InterruptedException, IOException {
+		homePage.handelHelloPopup();
+		homePage.handelModelPopup();
 		homePage.validateButtonForSideBar();
 		homePage.validateExpandView();
 		homePage.validateTitle();
@@ -51,21 +55,51 @@ public class HomePageTest extends BaseTest {
 	}
 
 	@Test (dataProvider = "tradeData", dataProviderClass = DataProvide.class)
-	public void placeEquityOrderTest(String securityName, String securityType, String quantity, String purchaseType) {
-		homePage.placeEquityOrder(securityName, securityType, quantity, purchaseType);
+	public void addOrdersToQuickViewTest(String securityName, String securityType, String quantity, String purchaseType) {
+		homePage.addOrdersToQuickView(securityName, securityType, quantity, purchaseType);
 	}
 	
 	@Test
 	public void validateNavigationMenuTest() throws IOException {
+		homePage.handelHelloPopup();
+		homePage.handelModelPopup();
 		homePage.validateNavigationMenu();
 		homePage.validateStrategiesSubLinks();
 		homePage.validateScreensSubLinks();
 		homePage.validateReportsSubLinks();
 	}
 
-	@Test
+	@Test (enabled=false)
 	public void closeInfoModelPopupTest() throws IOException {
 		homePage.handelModelPopup();
+	}
+	
+	@Test (priority = 2)
+	public void closeHelloPopupTest(){
+		homePage.handelHelloPopup();
+	}
+
+	
+	@Test (dataProvider = "tradeData", dataProviderClass = DataProvide.class, enabled = true)
+	public void placeEquityOrderTest(String securityName, String securityType, String quantity, String purchaseType) throws IOException {
+		homePage.handelHelloPopup();
+		homePage.handelModelPopup();
+		homePage.placeEquityOrder(securityName, securityType, quantity, purchaseType);
+		homePage.navigateToPendingOrders();
+		homePage.navigateToDaysHistory();
+		homePage.logout();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	@Test
+	public void openChartsForWatchListItemsTest() throws IOException {
+		homePage.handelHelloPopup();
+		homePage.handelModelPopup();
+		homePage.openChartsForWatchListItems();
 	}
 	
 }
