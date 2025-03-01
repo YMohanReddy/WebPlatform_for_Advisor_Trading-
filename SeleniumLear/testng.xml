@@ -3,7 +3,7 @@
 <suite parallel="methods" name="Suite">
   <test thread-count="5" parallel="methods" name="Test">
     <classes>
-      <class name="Tests.HomePageTest"/>
+      <class name=".TestNGAnnotationsDemo"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -48,6 +48,7 @@ public class LoginPage extends BaseTest {
 		text_password_loginPage.sendKeys(properties.getProperty("Password"));
 		text_password_loginPage.submit();
 
+		//after login we will land in home page, so we are creating home page obj and sending from here
 		return new HomePage();
 	}
 }

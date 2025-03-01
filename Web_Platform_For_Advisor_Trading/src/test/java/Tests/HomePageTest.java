@@ -21,10 +21,6 @@ public class HomePageTest extends BaseTest {
 	LoginPage logInPage;
 	HomePage homePage;
 
-	public HomePageTest() {
-		super();
-	}
-
 	@BeforeMethod
 	public void setUP() {
 		initialization();

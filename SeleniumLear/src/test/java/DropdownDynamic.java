@@ -19,7 +19,7 @@ public class DropdownDynamic {
 		WebElement from = driver.findElement(By.xpath("//input[@placeholder='From']"));
 		Thread.sleep(2000);
 		from.sendKeys("Sydney");
-		Thread.sleep(2000);
+		Thread.sleep(2000); 
 		from. sendKeys (Keys. ARROW_DOWN) ;
 		Thread.sleep(2000);
 		from.sendKeys(Keys. ENTER);
